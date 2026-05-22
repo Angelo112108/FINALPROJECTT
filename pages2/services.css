@@ -1,0 +1,270 @@
+/* ── Import Shared Global Design System ── */
+@import "../style.css";
+
+/* ── Custom Layout Overrides ── */
+.main {
+    padding: 40px;
+    background-color: #0a0a0a;
+}
+
+.main h1 {
+    font-size: 28px;
+    color: #ffffff;
+    border-left: 4px solid #8b0000;
+    padding-left: 16px;
+    margin-bottom: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ── Sidebar (Quick Links customization) ── */
+.sidebar {
+    padding: 30px 20px;
+}
+
+.sidebar h2 {
+    color: #8b0000;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: 3px solid #8b0000;
+    text-align: left;
+    border-bottom: none;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 12px;
+}
+
+.sidebar ul li a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s, padding-left 0.2s;
+    display: inline-block;
+}
+
+.sidebar ul li a:hover {
+    color: #ff3333;
+    padding-left: 5px;
+}
+
+/* ── Services Cards ── */
+.card {
+    display: block;
+    width: auto;
+    background-color: #111111;
+    border: 1px solid #222222;
+    border-left: 4px solid #8b0000;
+    padding: 32px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    border-color: #8b0000;
+    transform: translateY(-2px);
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.card img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    border: 1px solid #222222;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.card p {
+    color: #aaaaaa;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.card ul {
+    padding-left: 24px;
+    color: #aaaaaa;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.card ul li {
+    margin-bottom: 6px;
+}
+
+.card a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.card a:hover {
+    color: #ff3333;
+}
+
+/* Services Overview Table */
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.card th {
+    background-color: #8b0000;
+    color: #ffffff;
+    text-align: left;
+    padding: 14px 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.card td {
+    padding: 12px 16px;
+    color: #cccccc;
+    border-bottom: 1px solid #222222;
+    background-color: #141414;
+}
+
+.card tr:nth-child(even) td {
+    background-color: #181818;
+}
+
+.card tr:hover td {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.card td:first-child {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+/* ── Custom Inquiry Form ── */
+#inquiry .card p {
+    margin-bottom: 24px;
+}
+
+form.form-example {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+div.form-example {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+div.form-example label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888888;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+div.form-example input[type="text"],
+div.form-example input[type="email"],
+div.form-example select,
+div.form-example textarea {
+    background-color: #1a1a1a;
+    border: 1px solid #2e2e2e;
+    border-bottom: 2px solid #8b0000;
+    border-radius: 4px;
+    color: #f0f0f0;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    outline: none;
+    width: 100%;
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+div.form-example input[type="text"]:focus,
+div.form-example input[type="email"]:focus,
+div.form-example select:focus,
+div.form-example textarea:focus {
+    background-color: #222222;
+    border-color: #8b0000;
+    border-bottom: 2px solid #ff0000;
+    box-shadow: 0 0 10px rgba(139, 0, 0, 0.3);
+}
+
+div.form-example select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238b0000' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+div.form-example select option {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+div.form-example textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.6;
+}
+
+div.form-example input[type="submit"] {
+    background-color: #8b0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 16px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(139, 0, 0, 0.2);
+    transition: background-color 0.2s, letter-spacing 0.2s, transform 0.2s;
+}
+
+div.form-example input[type="submit"]:hover {
+    background-color: #b30000;
+    letter-spacing: 5px;
+    transform: translateY(-2px);
+}
+
+/* Result Message */
+#result {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    color: #4caf50;
+    letter-spacing: 1px;
+    text-align: center;
+}
